@@ -264,7 +264,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 14.2rem;
+    height: 500px;
 }
 
 /* Logo de google */
@@ -282,7 +282,7 @@ a{
 .browser-input{
     width: 80%;
     min-width: 360px;
-    flex: 1;
+    height: 100%;
 }
 
 .input{
@@ -389,4 +389,5 @@ a{
     .about-list{
         flex-direction: column;
     }
+
 }
