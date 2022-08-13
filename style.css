@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+:root{
+    --footer-bg: #171717;
+    --btn-bg: #303134;
+    --btn-color: #e8eaed;
+    --footer-color: #9aa0a6;
+    --border-bt-color: #3c4043;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: #202124;
+    /* color: #bdc1c6; */
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+}
+
+.list-item{
+    margin-right: 1.5rem;
+}
+
+.apps-container{
+    display: none;
+    position: absolute;
+    right: 1.5rem;
+    top: 5rem;
+    width: 360px;
+    height: 400px;
+    border-radius: .8rem;
+    overflow-y: scroll;
+}
+
+.apps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1em;
+}
+
+.apps-top{
+    border-bottom: 1px solid var(--border-bt-color);
+    margin-bottom: 1rem;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.apps-container p{
+    margin: .5em;
+}
+
+.apps-img{
+    width: 50%;
+}
+
+/* User section */
+
+.user{
+    background-color: #b344b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*User inside box*/
+.user-count{
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    width: 360px;
+    border-radius: .5rem;
+}
+
+.user-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--border-bt-color);
+    padding: 2rem 2rem 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.user-inside{
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+}
+.user-info .cta{
+    margin-top: 1rem;
+}
+
+
+/* Camara icon */
+.user-header span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 60%;
+    right: 38%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: .8em;
+    font-size: 1.2rem;
+}
+
+/* Textos user section */
+
+.user-text{
+    margin-bottom: .2em;
+    font-size: 16px;
+}
+
+/* Buttons cta */
+.cta{
+    display: block;
+    width: 80%;
+    padding: .5em 4em;
+    margin:  auto ;
+    border: 1px solid var(--border-bt-color);
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.cta-box{
+    border-radius: .5em;
+}
+
+/* Cuentas */
+
+.user-body{
+    padding: 1rem 2rem 0;
+    border-bottom: 1px solid var(--border-bt-color);
+}
+.counts{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+.user--sm{
+    width: 2rem;
+    height: 2rem;
+    margin-right: .75em;
+}
+
+.user--sm-c{
+    margin-left: .4rem;
+}
+
+.close-counts{
+    padding: 1rem 0 ;
+    border-bottom:1px solid var(--border-bt-color) ;
+}
+
+.politics{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+}
+
+.politics a{
+    font-size: 1rem;
+}
+
+/* --------------------- FIN USER SECTION -------------- */
+
+.material-symbols-outlined{
+    cursor: pointer;
+}
