@@ -32,7 +32,7 @@ a{
 .nav-menu{
     display: flex;
     justify-content: end;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .nav-list{
@@ -47,6 +47,7 @@ a{
 }
 
 .apps-container{
+    background-color: var(--footer-bg);
     display: none;
     position: absolute;
     right: 1.5rem;
@@ -54,6 +55,7 @@ a{
     width: 360px;
     height: 400px;
     border-radius: .8rem;
+    padding: 1rem 0 1.5rem;
     overflow-y: scroll;
 }
 
@@ -62,7 +64,7 @@ a{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem .5rem;
     padding: 1em;
 }
 
@@ -85,7 +87,7 @@ a{
 }
 
 .apps-img{
-    width: 50%;
+    width: 40%;
 }
 
 /* User section */
@@ -101,9 +103,11 @@ a{
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 /*User inside box*/
 .user-count{
+    background-color: var(--btn-bg);
     display: none;
     position: absolute;
     right: 1rem;
@@ -166,12 +170,17 @@ a{
     color: #fff;
     font-weight: bold;
     line-height: 1.5;
+    text-align: center;
 }
 
 .cta-box{
     border-radius: .5em;
 }
 
+.apps-container .cta-box{
+    padding: .5em 3em;
+    margin: 1rem auto 1.5rem;
+}
 /* Cuentas */
 
 .user-body{
@@ -209,7 +218,94 @@ a{
     font-size: 1rem;
 }
 
+.showContainer{
+    display: block;
+}
 /* --------------------- FIN USER SECTION -------------- */
+
+
+/* --------- Seccion de busqueda --------- */
+.browser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo de google */
+.icon-google{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.browser-input{
+    width: 80%;
+    min-width: 375px;
+}
+
+.input{
+    /* background-color: #303134; */
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 3.5rem;
+    border: 1px solid  #5f6368;;
+    border-radius: 2rem ;
+    color: #e8eaed;;
+    z-index: -1;
+}
+
+.brow{
+    background: transparent;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.icons{
+    position: absolute;
+    height: 2rem;
+    top: calc(50% - 1rem);
+    margin: 0 .5em;
+    
+}
+
+.icons-r{
+    right: 0;
+}
+
+.btns-input{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.search-btn{
+    background-color: #303134;
+    color: #e8eaed;
+    border: none;
+    outline: none;
+    padding: .7em 1.5em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    color: #bdc1c6;
+}
+
+.text a{
+    color: #8ab4f8;
+    padding: 0 3px
+}
+
 
 .material-symbols-outlined{
     cursor: pointer;

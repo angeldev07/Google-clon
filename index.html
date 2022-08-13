@@ -21,7 +21,7 @@
                 <li class="list-item"><a href="#" class="nav-link">Gmail</a></li>
                 <li class="list-item"><a href="#" class="nav-link">Imágenes</a></li>
                 <li class="list-item">
-                    <span class="material-symbols-outlined">apps</span>                    
+                    <span class="material-symbols-outlined apps-icon">apps</span>                    
                     <div class="apps-container">
                         <div class="apps apps-top">
                             <a href="#" class="app-container">
@@ -151,11 +151,11 @@
                                 <p class="cuenta">Formularios</p>
                             </a>
                         </div>
-                        <a href="#" class="cta">Más productos de Google</a>
+                        <a href="#" class="cta cta-box">Más productos de Google</a>
                     </div>
                 </li>
                 <li class="list-item">
-                    <a href="#"class="user">A</a>
+                    <div href="#"class="user">A</div>
                     <div class="user-count">
                         <div class="user-header">
                             <p class="user user-inside">A
@@ -206,18 +206,18 @@
     <main class="main">
         <section class="browser">
             <div class="icon-google">
-                <img src="" alt="google-icon">
+                <img src="./assets/img/googlelogo_light_colordp.png" alt="google-icon">
             </div>
             <div class="browser-input">
                 <form action="/">
                   <div class="input">
-                    <input type="text" name="browser" id="browser">
-                    <img src="" alt="lupa">  
-                    <img src="" alt="microfono"> 
+                    <span class="material-symbols-outlined icons"> search </span> 
+                    <input type="text" name="browser" id="browser" class="brow">
+                    <span class="material-symbols-outlined icons icons-r"> keyboard_voice </span> 
                   </div> 
                   <div class="btns-input">
-                    <a href="#" class="cta">Buscar con Google</a>
-                    <a href="#" class="cta">Voy a tener suerte</a>
+                    <button class="search-btn">Buscar con Google</button>
+                    <button class="search-btn">Voy a tener suerte</button>
                   </div>
                 </form>
                 <p class="text">Ofrecido por Google en: <a href="#">English</a></p>
@@ -254,5 +254,7 @@
             </ul>
         </section>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
