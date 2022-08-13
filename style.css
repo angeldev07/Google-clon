@@ -16,10 +16,12 @@ html{
     font-size: 14px;
 }
 
+
 body{
     background-color: #202124;
-    /* color: #bdc1c6; */
+    color: #bdc1c6;
     margin: 0;
+    min-height: 100vh;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
@@ -35,7 +37,8 @@ a{
     padding: 1.5rem 1rem;
 }
 
-.nav-list{
+.nav-list,
+.about-list{
     display: flex;
     align-items: center;
     list-style: none;
@@ -47,16 +50,27 @@ a{
 }
 
 .apps-container{
-    background-color: var(--footer-bg);
+    background-color: var(--btn-bg);
     display: none;
     position: absolute;
-    right: 1.5rem;
+    right: 1rem;
     top: 5rem;
     width: 360px;
     height: 400px;
     border-radius: .8rem;
     padding: 1rem 0 1.5rem;
     overflow-y: scroll;
+    box-shadow: 0 -5px 10px var(--border-bt-color);
+    z-index: 10;
+}
+
+.apps-container::-webkit-scrollbar{
+    width: .7rem;
+}
+
+.apps-container::-webkit-scrollbar-thumb{
+    background-color: #5f6368;
+    border-radius: 1rem;
 }
 
 .apps{
@@ -64,8 +78,8 @@ a{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 2rem .5rem;
-    padding: 1em;
+    gap:  .5rem;
+    padding: .5em;
 }
 
 .apps-top{
@@ -78,8 +92,17 @@ a{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1em 0; 
     text-align: center;
     color: #fff;
+    transition: background .3s;
+
+}
+
+.app-container:hover{
+    background-color: var(--border-bt-color);
+    border-radius: 1rem;
+    text-decoration: none;
 }
 
 .apps-container p{
@@ -114,6 +137,7 @@ a{
     top: 5rem;
     width: 360px;
     border-radius: .5rem;
+    z-index: 10;
 }
 
 .user-header{
@@ -139,6 +163,7 @@ a{
 
 /* Camara icon */
 .user-header span{
+    background-color: var(--footer-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,6 +196,13 @@ a{
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
+    transition: all .3s;
+}
+
+.cta:hover,
+.counts:hover{
+    background-color: rgba(133 133 133 / .5);
+    text-decoration: none;
 }
 
 .cta-box{
@@ -184,7 +216,7 @@ a{
 /* Cuentas */
 
 .user-body{
-    padding: 1rem 2rem 0;
+    padding: 1rem 0 0;
     border-bottom: 1px solid var(--border-bt-color);
 }
 .counts{
@@ -192,6 +224,8 @@ a{
     align-items: center;
     padding-bottom: 1rem;
     color: #fff;
+    padding: .5em 2em;
+    transition: all .3s;
 }
 .user--sm{
     width: 2rem;
@@ -230,32 +264,38 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 14.2rem;
 }
 
 /* Logo de google */
 .icon-google{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 150px;
+}
+
+.icon-google img{
+    max-width: 90%;
 }
 
 .browser-input{
     width: 80%;
-    min-width: 375px;
+    min-width: 360px;
+    flex: 1;
 }
 
 .input{
     /* background-color: #303134; */
     position: relative;
     display: flex;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin: auto;
     height: 3.5rem;
     border: 1px solid  #5f6368;;
     border-radius: 2rem ;
-    color: #e8eaed;;
-    z-index: -1;
+    color: #e8eaed;
 }
 
 .brow{
@@ -292,9 +332,14 @@ a{
     color: #e8eaed;
     border: none;
     outline: none;
+    border-radius: .3rem;
     padding: .7em 1.5em;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.search-btn:hover{
+    outline: 1px solid var(--footer-color);
 }
 .text{
     text-align: center;
@@ -306,7 +351,42 @@ a{
     padding: 0 3px
 }
 
+/* ------------ FOOTER ----------- */
+.footer{
+    background-color: var(--footer-bg);
+    color: #9aa0a6; 
+}
+
+.country{
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-bt-color);
+    
+}
+.about-list{
+    justify-content: space-around;
+    padding: 1rem 3rem;
+}
+
+.terminos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.terminos a{
+    display: inline-block;
+    color: #9aa0a6;
+    padding: .8em;
+}
 
 .material-symbols-outlined{
     cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .about-list{
+        flex-direction: column;
+    }
 }
